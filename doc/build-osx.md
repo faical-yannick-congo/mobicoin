@@ -19,7 +19,7 @@ Dependencies
     brew install automake berkeley-db4 libtool boost --c++11 miniupnpc openssl pkg-config protobuf --c++11 qt5 libevent
 
 In case you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
-
+ 
     brew install librsvg
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
@@ -38,6 +38,8 @@ Build Litecoin Core
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
+    In case you want to build the disk image with `make deploy` (.dmg / optional), by passing `--with-gui` to configure.
+    
         ./autogen.sh
         ./configure
         make
